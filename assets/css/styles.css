@@ -1,0 +1,378 @@
+body, html {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales */
+.bg-container {
+    background-image: url('/assets/images/fondo.webp');
+    width: 100%;
+    min-height: 120vh; /* Use min-height instead of fixed height */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -202px; 
+    padding-top: 202px;
+    overflow-x: hidden; /* Previene el desplazamiento horizontal */
+}
+
+.navbar-transparent {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.nav-link {
+    color: #FFFFFF;
+}
+
+/* Estilos para el hero */
+.hero-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.06em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.hero-description {
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 37.2px;
+    letter-spacing: -0.06em;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+
+/* Botones */
+.btn-agenda, .btn-conoce {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.06em;
+    width: 231px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.btn-agenda {
+    background-color: #F6C61B;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.btn-conoce {
+    background-color: #3DB7B0;
+    color: #FFFFFF;
+}
+
+/* Estilos para los tratamientos */
+.img-tratamiento {
+    width: 242.65px;
+    height: 226.29px;
+    object-fit: contain;
+}
+
+.titulo-tratamientos {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.06em;
+    color: #494949;
+    margin-left: 44px;
+}
+
+.titulo-servicio, .testimonio-destacado {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.06em;
+    color: #494949;
+}
+
+.descripcion-servicio, .testimonio-texto, .testimonio-autor {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26.4px;
+    letter-spacing: -0.06em;
+    color: #494949;
+    word-wrap: break-word;
+}
+
+.testimonio-texto {
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+.testimonio-destacado {
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+.testimonio-autor {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Estilos para las imágenes de servicios */
+.servicio-img {
+    width: 623px;
+    height: 354px;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bg-tratamientos {
+    background-color: #3DB7B017;
+    margin: 50;
+}
+
+.margin-custom {
+    margin: 50px; /* Ajusta el valor de margen según tus necesidades */
+}  
+
+/* Estilos para testimonios */
+.bg-testimonios {
+    background-color: #3DB7B0;
+    color: #FFFFFF;
+}
+
+/* Estilos para el footer */
+.bg-footer {
+    padding-left: 100px; /* Agrega padding a la izquierda */
+    padding-right: 100px; /* Agrega padding a la derecha */
+    background-color: #494949;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bg-footer h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.bg-footer p,
+.bg-footer address,
+.bg-footer .nav-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.bg-footer .footer-bottom {
+    margin: 0 !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.bg-footer a.link-light {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.bg-footer a.link-light:hover {
+    text-decoration: underline;
+}
+
+/* Iconos */
+.icon-square svg, .link-light svg {
+    fill: #FFFFFF;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .hero-description {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    .btn-agenda, .btn-conoce {
+        font-size: 18px;
+        line-height: 21.6px;
+        width: 200px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .hero-description {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .btn-agenda, .btn-conoce {
+        font-size: 16px;
+        line-height: 19.2px;
+        width: 180px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .btn-agenda, .btn-conoce {
+        font-size: 14px;
+        line-height: 16.8px;
+        width: 160px;
+        height: 40px;
+    }
+
+    .bg-container {
+        padding: 20px 0; /* Add more padding for smaller screens */
+    }
+    
+    /* Ajustes para el logo blanco */
+    .bg-container .img-fluid {
+        max-width: 80%; /* Reduce el tamaño del logo en pantallas pequeñas */
+        height: auto;
+    }
+
+    /* Ajustes para los botones */
+    .btn-agenda, .btn-conoce {
+        margin: 0 auto 10px auto; /* Centrar los botones y agregar margen inferior */
+    }
+    
+    /* Ajustes para las imágenes de servicios */
+    .img-tratamiento,
+    .servicio-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Ajustes para el logo blanco */
+    .bg-container .img-fluid {
+        max-width: 70%; /* Reduce el tamaño del logo en pantallas pequeñas */
+        height: auto;
+        margin: 0 auto; /* Centrar la imagen */
+        
+    }
+
+    /* Ajustes para los textos */
+    .titulo-servicio, .descripcion-servicio {
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    .bg-footer .row {
+        text-align: center;
+    }
+
+    .bg-footer .col-md-4 {
+        margin-bottom: 15px;
+    }
+
+    .bg-footer .list-unstyled {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .bg-footer .list-unstyled li {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .bg-footer img {
+        display: block;
+        margin: 0 auto; /* Centrar la imagen */
+    }
+
+    .bg-cotainer img {
+        display: block;
+        margin: 0 auto; /* Centrar la imagen */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6C61B;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+  
+.back-to-top i {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.centered-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+.modal-header .btn-close {
+    background: none;
+    border: none;
+}
+  
+.modal-body img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+  
+.modal-body h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+  
+ .modal-body button {
+    font-size: 1rem;
+    padding: 10px;
+}
+  
+.modal-body p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+  
